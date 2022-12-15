@@ -1,29 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Квіз</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_task6.css">
+    <link rel="shortcut icon" href="pictures/flower_icon.png">
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Астрономія</h2>
-        <p>Метеором називається явище, коли:</p>
-        <p><input type="radio" name="year" id="y1">Зорі падають на землю</p>
-        <p><input type="radio" name="year" id="y2">Каміння падає на землю</p>
-        <p><input type="radio" name="year" id="y3">Порошинки згорають у повітрі</p>
-        <p><input type="radio" name="year" id="y4">Блискавки спостерігаються у повітрі</p>
-    
-        <button id = "btn">Відповісти</button>
-        <p class="right hidden" id="right"> <b>Правильна відповідь.</b>  Явище, що виникає за згоряння в повітрі порошинок </p>
-        <div class="wrong_div hidden" id="wrong_div">
-            <p class="wrong" id="wrong"><b>Неправильна відповідь</b></p>
-            <button id = "btn1">Подивитись відповідь</button>
+<div class="container1">
+    <div class="title"> <h1> Сухоцвіти </h1></div>
+    <div class="quest"> Які квіти відносяться до сухоцвітів?</div>
+    <div class="img">
+        <div class="item">
+            <img  src="pictures/fl1.jpg" alt="fl1">
+            <p> <input type="radio"  name="color" id="f1" > Іфейон</p>
         </div>
-    
-        <p id="answer" class = "hidden"><b>Правильна відповідь:</b> Порошинки згорають у повітрі </p>
+        <div class="item">
+            <img src="pictures/fl2.jpg" alt="fl1">
+            <p> <input type="radio"  name="color" id="f2" > Маргаритки </p>
+        </div>
+        <div class="item">
+            <img  src="pictures/fl3.jpg" alt="fl1">
+            <p> <input  type="radio"  name="color" id="f3" > Гіпсофіли </p>
+        </div>
+        <div class="item">
+            <img src="pictures/fl4.jpg" alt="fl1">
+            <p> <input  type="radio"  name="color" id="f4" > Нарциси </p>
+        </div>
     </div>
-    <script src="js.js"></script>
+    <div class="answer">
+        <button id = "btn"> Відповісти </button>
+    </div>
+    
+</div>
+<script src="js/script_task6.js"></script>
+
+</body>
 </html>
